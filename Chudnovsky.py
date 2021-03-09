@@ -2,7 +2,7 @@ import decimal
 import math
 import time
 
-p2rint ('Please input the numember of decimal spaces')
+print ('Please input the numember of decimal spaces')
 dec = int(input())
 
 decimal.getcontext().prec = dec
