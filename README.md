@@ -4,7 +4,7 @@ The goal of this repository is to present a few algorithms that allow you to cal
 
 In order to do this the [Python Decimal](https://docs.python.org/3/library/decimal.html) module is used. The module allows one to define the number decimal spaced used in the calculation. Obviously the greater the number of decimal spaces, the longer the calculation of by will take.
 
-Due to the high level of precision required for the calculation of factorials and square roots, the [Math] (https://docs.python.org/3/library/math.html) module is also used in most algorithms.
+Due to the high level of precision required for the calculation of factorials and square roots, the [Math](https://docs.python.org/3/library/math.html) module is also used in most algorithms.
 
 ---
 ## Logic behind the calculation
