@@ -19,6 +19,7 @@ The algorithms have been setup in a away that the **while loop** ends once furth
 ### Gregory-Leibniz
 ### Ramanujan-Sato
 ### Chudnovsky
+### Bailey-Borwein-Plouffe
 
 ---
 

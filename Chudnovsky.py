@@ -16,6 +16,7 @@ pi = decimal.Decimal(3)
 q = int(0)
 
 with open ('PI_logs/' + time.strftime("%Y%m%d-%H%M") + '.txt','w+') as text_file:
+    print('Method: Chudnovsky', file=text_file)
     print('decimal Spaces: ', dec, file=text_file)
     print('start time: ', time.strftime("%Y%m%d-%H%M%S" ), file=text_file)
     while u != oldu:
