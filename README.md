@@ -25,6 +25,6 @@ The algorithms have been setup in a away that the **while loop** ends once furth
 
 ## To dos
 
-* Register the start time and the end time of the calculation, so that the total calculating time can be meassured -> done for Chudnovsky
-* Save the final result of π in to a file, toghether with the number of interactions, start time and end time -> done for Chudnovsky
-* Request the desiered level of precision (number of decimal spaces) right at the beggining -> done for Chudnovsky
+* Register the start time and the end time of the calculation, so that the total calculating time can be meassured -> done for Chudnovsky & BBP
+* Save the final result of π in to a file, toghether with the number of interactions, start time and end time -> done for Chudnovsky & BBP
+* Request the desiered level of precision (number of decimal spaces) right at the beggining -> done for Chudnovsky -> done for Chudnovsky & BBP
