@@ -20,6 +20,7 @@ The algorithms have been setup in a away that the **while loop** ends once furth
 ### Ramanujan-Sato
 ### Chudnovsky
 ### Bailey-Borwein-Plouffe
+### Gauss-Legendre
 
 ---
 

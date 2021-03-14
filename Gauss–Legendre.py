@@ -39,7 +39,7 @@ with open ('PI_logs/' + time.strftime("%Y%m%d-%H%M") + '.txt','w+') as text_file
     pi = decimal.Decimal(((a+b)**2)/(4*t))
 
     print('end time: ', time.strftime("%Y%m%d-%H%M%S"), file=text_file)
-    print('interactions: ', (q-1), file=text_file)
+    print('interactions: ', (q), file=text_file)
     print('pi: ', (pi), file=text_file)
 
     print('DONE')

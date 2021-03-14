@@ -21,7 +21,7 @@ with open ('PI_logs/' + time.strftime("%Y%m%d-%H%M") + '.txt','w+') as text_file
         k += 4
     
     print('end time: ', time.strftime("%Y%m%d-%H%M%S"), file=text_file)
-    print('interactions: ', (i-1), file=text_file)
+    print('interactions: ', (i), file=text_file)
     print('pi: ', (pi), file=text_file)
 
 print(DONE)
