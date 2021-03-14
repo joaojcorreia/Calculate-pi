@@ -6,30 +6,37 @@ print ('Please input the number of decimal spaces')
 dec = int(input())
 
 decimal.getcontext().prec = dec
-C = decimal.Decimal(426880*math.sqrt(10005))
 
-u=decimal.Decimal(0)
+a=decimal.Decimal(1)
+olda = decimal.Decimal(1)
+b=decimal.Decimal(1/math.sqrt(2))
+t=decimal.Decimal(1/4)
+p=(1)
 
-oldu = decimal.Decimal(3)
 pi = decimal.Decimal(3)
 
 q = int(0)
 
 with open ('PI_logs/' + time.strftime("%Y%m%d-%H%M") + '.txt','w+') as text_file:
-    print('Method: Chudnovsky', file=text_file)
+    print('Gauss-Legendre', file=text_file)
     print('decimal Spaces: ', dec, file=text_file)
     print('start time: ', time.strftime("%Y%m%d-%H%M%S" ), file=text_file)
-    while u != oldu:
+    while a != b:
         
-        oldu = u
+        olda = a
 
-        u += decimal.Decimal(((decimal.Decimal(math.factorial(6*q))/(decimal.Decimal(math.factorial(3*q))*decimal.Decimal((math.factorial(q))**3)))*(545140134*q+13591409))/(decimal.Decimal((-262537412640768000)**q)))
+        a = decimal.Decimal((a+b)/2)
+        b = decimal.Decimal(math.sqrt(olda*b))
+
+        t = decimal.Decimal(t-(p*((olda-a)**2)))
+
+        p = p*2
 
         q += 1
 
 
 
-    pi = C/u
+    pi = decimal.Decimal(((a+b)**2)/(4*t))
 
     print('end time: ', time.strftime("%Y%m%d-%H%M%S"), file=text_file)
     print('interactions: ', (q-1), file=text_file)

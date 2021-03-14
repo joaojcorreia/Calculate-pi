@@ -20,7 +20,7 @@ with open ('PI_logs/' + time.strftime("%Y%m%d-%H%M") + '.txt','w+') as text_file
         
         oldpi = pi
 
-        pi += decimal.Decimal(1/(16**k))*(decimal.Decimal(120*k**2+151*k+47)/decimal.Decimal(512*k**4+1024*k**3+712*k**2+194*k+15))
+        pi += decimal.Decimal(1/(16**k))*decimal.Decimal(decimal.Decimal(120*k**2+151*k+47)/decimal.Decimal(512*k**4+1024*k**3+712*k**2+194*k+15))
 
         k += 1
 
@@ -28,4 +28,4 @@ with open ('PI_logs/' + time.strftime("%Y%m%d-%H%M") + '.txt','w+') as text_file
     print('interactions: ', (k-1), file=text_file)
     print('pi: ', (pi), file=text_file)
 
-    print(pi)
+print(DONE)
