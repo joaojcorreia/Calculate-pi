@@ -16,11 +16,11 @@ The algorithms have been setup in a away that the **while loop** ends once furth
 ---
 ## Algorithms used
 
-### Gregory-Leibniz
-### Ramanujan-Sato
-### Chudnovsky
-### Bailey-Borwein-Plouffe
-### Gauss-Legendre
+* ### [Gregory-Leibniz](https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80)
+* ### [Ramanujan-Sato](https://en.wikipedia.org/wiki/Borwein%27s_algorithm#Class_number_2_(1989))
+* ### [Chudnovsky](https://en.wikipedia.org/wiki/Chudnovsky_algorithm)
+* ### [Bailey-Borwein-Plouffe](https://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula#BBP_digit-extraction_algorithm_for_%CF%80)
+* ### [Gauss-Legendre](https://en.wikipedia.org/wiki/Gauss%E2%80%93Legendre_algorithm)
 
 ---
 

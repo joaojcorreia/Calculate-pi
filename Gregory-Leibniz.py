@@ -1,7 +1,11 @@
 import decimal
 import time
 
-decimal.getcontext().prec = 200
+print ('Please input the number of decimal spaces')
+dec = int(input())
+
+decimal.getcontext().prec = dec
+
 pi = decimal.Decimal(4)
 oldpi = decimal.Decimal(0)
 i = 1
