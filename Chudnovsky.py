@@ -1,16 +1,30 @@
 import decimal
-import math
 import time
 
 print ('Please input the number of decimal spaces')
 dec = int(input())
 
 decimal.getcontext().prec = dec
-C = decimal.Decimal(426880*math.sqrt(10005))
 
-u=decimal.Decimal(0)
+root = decimal.Decimal(100.024996876)
+oldroot = decimal.Decimal(0)
 
+while root != oldroot:
+    
+    oldroot = root
+
+    root = decimal.Decimal(decimal.Decimal(0.5)*decimal.Decimal(root+decimal.Decimal(10005/root)))
+
+
+C = decimal.Decimal(426880*root)
+
+L = decimal.Decimal(13591409)
+X = decimal.Decimal(1)
+M = decimal.Decimal(1)
+
+u=decimal.Decimal(decimal.Decimal(M*L)/X)
 oldu = decimal.Decimal(3)
+
 pi = decimal.Decimal(3)
 
 q = int(0)
@@ -23,13 +37,17 @@ with open ('PI_logs/' + time.strftime("%Y%m%d-%H%M") + '.txt','w+') as text_file
         
         oldu = u
 
-        u += decimal.Decimal(((decimal.Decimal(math.factorial(6*q))/(decimal.Decimal(math.factorial(3*q))*decimal.Decimal((math.factorial(q))**3)))*(545140134*q+13591409))/(decimal.Decimal((-262537412640768000)**q)))
+        L = decimal.Decimal(L+545140134)
+        X = decimal.Decimal(-262537412640768000*X) 
+        M = decimal.Decimal(M*decimal.Decimal(decimal.Decimal((12*q+2)*(12*q+6)*(12*q+10))/decimal.Decimal((q+1)**3)))
 
+        u += decimal.Decimal(decimal.Decimal(M*L)/X)
+        
         q += 1
 
 
 
-    pi = C/u
+    pi = decimal.Decimal(C/u)
 
     print('end time: ', time.strftime("%Y%m%d-%H%M%S"), file=text_file)
     print('interactions: ', (q), file=text_file)

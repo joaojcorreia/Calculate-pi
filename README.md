@@ -9,7 +9,7 @@ Due to the high level of precision required for the calculation of factorials an
 ---
 ## Logic behind the calculation
 
-All the presented algorithms are interactive processes, that increase the precision, and the number of decimal spaces, the more loops the calculation is run. 
+All the presented algorithms are interactive processes, that increase the precision and the number of decimal spaces, the more loops the calculation is run. 
 
 The algorithms have been setup in a away that the **while loop** ends once further interactions do not change the final number (for the number of decimal spaces selected).
 
